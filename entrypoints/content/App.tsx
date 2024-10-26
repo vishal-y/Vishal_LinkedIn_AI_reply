@@ -1,13 +1,16 @@
 import { useState } from "react";
+import Modal from "@/components/Modal";
+import { useAIButton } from "@/hooks/useAiButton";
 
-export default () => {
-  const [count, setCount] = useState(1);
-  const increment = () => setCount((count) => count + 1);
+const App = () => {
+  const [showModal, setShowModal] = useState(false);
+  useAIButton(setShowModal);
 
   return (
-    <div className="bg-red-500">
-      <p>This is React. {count}</p>
-      <button onClick={increment}>Increment</button>
-    </div>
+    <>
+      {showModal && <Modal setShowModal={setShowModal} />}
+    </>
   );
 };
+
+export default App;

@@ -61,22 +61,22 @@ const Modal = ({ setShowModal }: ModalProps) => {
     
     
     // Insert the text without being the editable div active.
-    // if (msgFormContenteditable) {
-    //   const msgFormPlaceholder = document.querySelector(".msg-form__placeholder") as HTMLDivElement;
-    //   const paragraph = msgFormContenteditable.querySelector("p") as HTMLParagraphElement; 
-    //   if (msgFormPlaceholder) msgFormPlaceholder.remove()
-    //   if (paragraph) paragraph.textContent = staticResponse; 
-    //   setShowModal(false);
-    // }
+    if (msgFormContenteditable) {
+      const msgFormPlaceholder = document.querySelector(".msg-form__placeholder") as HTMLDivElement;
+      const paragraph = msgFormContenteditable.querySelector("p") as HTMLParagraphElement; 
+      if (msgFormPlaceholder) msgFormPlaceholder.remove()
+      if (paragraph) paragraph.textContent = staticResponse; 
+      setShowModal(false);
+    }
 
 
     // Uncomment this block of code to Insert the text 
     // with send button active just like normal editable div
-    if (msgFormContenteditable) {
-      msgFormContenteditable.focus();
-      document.execCommand("insertText", false, staticResponse);
-      setShowModal(false);
-    }
+    // if (msgFormContenteditable) {
+    //   msgFormContenteditable.focus();
+    //   document.execCommand("insertText", false, staticResponse);
+    //   setShowModal(false);
+    // }
     
   };
 

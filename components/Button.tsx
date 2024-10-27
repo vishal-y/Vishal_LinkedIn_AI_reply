@@ -20,7 +20,7 @@ function Button(props: ButtonProp) {
         backgroundColor: props.bgColor,
         color: props.textColor,
         border: props.borderColor ? `1px solid ${props.borderColor}` : 'none',
-        cursor: props.cursor === "disable" ? "not-allowed" : "pointer",
+        cursor: props.cursor
       }}
       disabled={props.cursor === "disable"}
       className="flex font-normal justify-center items-center gap-2 px-4 py-1.5 rounded-lg"

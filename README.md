@@ -24,7 +24,7 @@ React JS ✅ | TypeScript ✅ | Tailwind CSS ✅
 
 
 ##  This is a 30-sec video demonstrating  the extension.
-[Link to Video](URL_to_your_video)
+https://github.com/user-attachments/assets/9ff01e29-a0f6-49ad-8c59-492d19c21b3b
 
 
 
@@ -59,8 +59,9 @@ graph TD
 I was confused about when the user clicks the insert button. It should insert the text (response) into the div with or without the active send button. In Figma Screen 5, the text (response) was inserted without the button being active, so I implemented both. By default, it is set to the state without the active button (Figma Screen 5). However, one can uncomment the relevant code to insert with the active button.
 
 Here are the images for reference:  
-![Figma Screen 5 | Extension's Default Behaviour](![figmaScreen5](https://github.com/user-attachments/assets/6cb8a2c2-517c-4b33-9e3c-ff60fa7adad7)
-)
+![Figma Screen 5 | Extension's Default Behaviour]
+![figmaScreen5](https://github.com/user-attachments/assets/86475bff-4179-46b9-83fc-71f40fc47c6a)
+
 
 ##### This is the default behaviour
 ```javascript
